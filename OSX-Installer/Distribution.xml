@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<installer-gui-script minSpecVersion="1">
+    <pkg-ref id="biz.kyogoku.apps.OpenCV2-framework"/>
+    <title>OpenCV2 Framework</title>
+    <license file="License.rtf"></license>
+    <options customize="never" require-scripts="false"/>
+    <choices-outline>
+        <line choice="default">
+            <line choice="biz.kyogoku.apps.OpenCV2-framework"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="biz.kyogoku.apps.OpenCV2-framework" visible="false">
+        <pkg-ref id="biz.kyogoku.apps.OpenCV2-framework"/>
+    </choice>
+    <pkg-ref id="biz.kyogoku.apps.OpenCV2-framework" version="0.0" onConclusion="none">tmp.pkg</pkg-ref>
+</installer-gui-script>

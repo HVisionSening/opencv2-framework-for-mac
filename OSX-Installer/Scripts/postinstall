@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# installing cv2.py for Apple Python
+#if [ ! -f /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/cv2.so ]; then
+    cd /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python
+    ln -s /Library/Frameworks/OpenCV2.framework/cv2.so
+    ln -s /Library/Frameworks/OpenCV2.framework/cv.py
+    #fi
+
+# installing cv2.py for Python.org Python
+#if [ ! -f /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/cv2.so ]; then
+    cd /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
+    ln -s /Library/Frameworks/OpenCV2.framework/cv2_pythonorg.so cv2.so
+    ln -s /Library/Frameworks/OpenCV2.framework/cv.py
+#fi
